@@ -1,0 +1,11 @@
+<div class="text-center">
+<h1>New Cocktail</h1>
+<%= simple_form_for(@cocktail) do |f| %>
+<%= f.error_notification %>
+<%= f.input :name, label: "Drink Name: " %>
+<%= f.button :submit %>
+<% end %>
+<br>
+<%= link_to "Home Page", root_path, {:class => "btn btn-primary"} %>
+</div>
+
